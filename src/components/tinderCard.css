@@ -1,0 +1,228 @@
+.dashboard .swipe_container {
+  width: var(--CardW);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #f0f2f4;
+  position: relative;
+}
+.swipe {
+  position: absolute;
+  overflow: hidden;
+}
+
+.dashboard .card_Container {
+  width: 375px;
+  height: 95%;
+  position: absolute;
+  top: 0;
+}
+
+.card {
+  background-color: #fff;
+  width: 375px;
+  height: 95vh;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.card h3 {
+  margin-top: 0;
+}
+
+.dashboard .swipe_info {
+  position: absolute;
+
+  bottom: 0;
+  padding: 10px;
+}
+/* tinderCardBtn */
+.tinderCardBtn {
+  position: absolute;
+  bottom: 0;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  z-index: 2;
+}
+.tinderCardBtn .outer_nope {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2px solid #fd267a;
+  display: grid;
+  place-items: center;
+}
+/* .tinderCardBtn .inner_nope{} */
+.tinderCardBtn .inner_nope svg {
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  fill: #fd267a;
+}
+.tinderCardBtn .superLike {
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  border: 2px solid #106bd5;
+  display: grid;
+  place-items: center;
+}
+.tinderCardBtn .superLike svg {
+  vertical-align: middle;
+  width: 29.01px;
+  height: 29.01px;
+  fill: #106bd5;
+}
+.tinderCardBtn .like {
+  width: 68px;
+  height: 68px;
+  border-radius: 50%;
+  border: 2px solid #8bc34a;
+  display: grid;
+  place-items: center;
+}
+.tinderCardBtn .like svg {
+  vertical-align: middle;
+  width: 34px;
+  height: 34px;
+  fill: #8bc34a;
+}
+/* text__overlay */
+.text__overlay {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  width: 100%;
+
+  color: white;
+  background: linear-gradient(to top, #000000, #0000007a);
+  filter: drop-shadow(2px 4px 6px rgba(0, 0, 0, 0.871)) blur(2px);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.CardTextArea {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 38%;
+  width: 100%;
+  padding: 0 20px;
+  color: white;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.CardTextArea .name_age {
+  display: flex;
+  align-items: center;
+}
+.CardTextArea .name_age h3 {
+  text-align: left;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-right: 10px;
+}
+.CardTextArea .name_age span {
+  font-size: 1.7rem;
+  font-weight: 100;
+}
+.CardTextArea .active {
+  display: flex;
+  align-self: center;
+}
+.CardTextArea .active > div {
+  width: 10px;
+  height: 20px;
+  display: grid;
+  place-items: center;
+  margin-right: 10px;
+}
+.CardTextArea .active > div > span {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background: #8bc34a;
+  margin-right: 10px;
+}
+.CardTextArea .active > span {
+  font-size: 0.8rem;
+  font-weight: 100;
+}
+
+.CardTextArea .about {
+  font-size: 0.9rem;
+  font-weight: 100;
+  text-align: left;
+}
+/* .image-box__overlay */
+.image-box__overlay {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 101px;
+  right: 0;
+  bottom: 0;
+  /* background: #21262e; */
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  z-index: 1;
+}
+
+/* status text  */
+.status_text_Nope {
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width: 150px;
+  height: 54px;
+  border: 5px solid #f13b2d;
+  transform: rotate(20deg);
+  font-size: 40px;
+  font-weight: 600;
+  color: #f13b2d;
+  display: grid;
+  place-items: center;
+  border-radius: 4px;
+  opacity: 0;
+}
+.opacity {
+  opacity: 1;
+}
+
+.cardDetailsBtn {
+  position: absolute;
+  bottom: 175px;
+  right: 5%;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background-color: gainsboro;
+  padding: 2px;
+}
+.cardDetailsBtn svg {
+  fill: #000000;
+}
+.cardDetailsBtn:hover {
+  width: 28px;
+  height: 28px;
+}
+.cardDetailsBtn:hover svg {
+  width: 28px;
+  height: 28px;
+}

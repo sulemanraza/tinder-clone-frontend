@@ -1,0 +1,106 @@
+.dashboard {
+  display: flex;
+  height: 100vh;
+}
+
+/* Aside Container */
+.Aside_Container {
+  width: var(--asideW);
+  height: 100vh;
+  text-align: left;
+  z-index: 9999;
+  background: white;
+}
+
+.Aside_Container .Chat_Btn {
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-right: 1px solid #d2dbdf;
+}
+.Aside_Container .Chat_Btn button.option {
+  display: inline-block;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  background: transparent;
+  cursor: pointer;
+  transition: border-bottom 0.5s ease-in-out;
+}
+.Aside_Container .Chat_Btn button.active {
+  border-bottom: 2px solid #fd267a;
+}
+/* Chat Icon */
+.Aside_Container .Chat_icon {
+  display: grid;
+  place-items: center;
+  position: relative;
+  padding: 20px;
+}
+.Aside_Container .Chat_icon svg {
+  display: inline-block;
+  margin-bottom: -10px;
+}
+.Aside_Container .Chat_icon svg:nth-child(2) {
+  position: relative;
+  right: -57px;
+  bottom: 65px;
+}
+.Aside_Container .Chat_icon h3 {
+  text-align: center;
+  color: #fe3b62;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.Aside_Container .Chat_icon p {
+  color: #787f88;
+  text-align: center;
+  font-size: 15px;
+}
+
+/* aside container header */
+.aside_container_header {
+  padding: 0 10px;
+  height: 73px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(45deg, #fd267a, #ff6036);
+}
+.aside_container_header .profile {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.aside_container_header .profile .img_container {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aside_container_header .profile h3 {
+  color: white;
+}
+
+.aside_container_header .logout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.aside_container_header .logout svg {
+  width: 30px;
+  height: 30px;
+  fill: white;
+  cursor: pointer;
+}
+.aside_container_header .logout svg:hover {
+  fill: rgb(220, 213, 213);
+}

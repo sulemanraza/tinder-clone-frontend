@@ -1,0 +1,85 @@
+/* User List */
+.ChatList {
+  padding: 20px;
+  /* height: 100vh; */
+  /* overflow: hidden;
+  scrollbar-width: thin;
+  overflow-y: auto; */
+
+  border-right: 1px solid #d2dbdf;
+}
+
+.ChatList h4 {
+  text-align-last: left;
+  color: #fd267a;
+}
+.ChatList .UserList {
+  list-style: none;
+  margin-top: 30px;
+  height: 60vh;
+  overflow: hidden;
+  overflow-y: auto;
+}
+.ChatList .UserList::-webkit-scrollbar {
+  scrollbar-width: thin;
+  background-color: #787f88;
+  width: 5px;
+  height: 8px;
+}
+.ChatList .UserList::-webkit-scrollbar-thumb {
+  background-color: #fd267a;
+  border-radius: 30px;
+}
+.ChatList .UserList .user_profile {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.ChatList .UserList .user_profile .user_profile_img {
+  display: flex;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+  background-position: top center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ChatList .UserList .user_profile .user_profile_info {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.ChatList .UserList .user_profile .user_profile_info .name {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 5px;
+}
+.ChatList .UserList .user_profile .user_profile_info p {
+  color: hsl(0deg 0% 70%);
+  font-size: 14px;
+  font-weight: normal;
+}
+/* Chat Container Right Side */
+.chat_container {
+  width: var(--CardW);
+  display: grid;
+  place-items: center;
+}
+.chat_container .chat_area {
+  width: var(--CardW);
+  height: 100vh;
+  position: fixed;
+  display: grid;
+  grid-template-columns: 0.7fr 0.3fr;
+}
+.chat_container .chat_area .user_Chat {
+  position: relative;
+  border-right: 1px solid #d2dbdf;
+}

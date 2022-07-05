@@ -1,0 +1,121 @@
+/* Conversation Header */
+.chat_header {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.chat_header .left {
+  display: flex;
+  align-items: center;
+}
+.chat_header .left .img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+.chat_header .left .details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #d7d9da;
+  font-weight: 400;
+  font-size: 13px;
+}
+.chat_header .center {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.chat_header .right svg {
+  width: 30px;
+  height: 30px;
+  fill: #fd267a;
+  cursor: pointer;
+}
+.chat_header .right svg:hover {
+  fill: #312e2f;
+}
+/* Conversation */
+.Chat_text {
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+  overflow: hidden;
+  overflow-y: scroll;
+  padding-bottom: 130px;
+}
+.Chat_text::-webkit-scrollbar {
+  scrollbar-width: thin;
+  background-color: #787f88;
+  width: 5px;
+  height: 8px;
+  visibility: hidden;
+}
+.Chat_text::-webkit-scrollbar-thumb {
+  background-color: #fd267a;
+  border-radius: 30px;
+  visibility: hidden;
+}
+.clear {
+  clear: both;
+}
+/* Chat_from_me */
+.Chat_text .Chat_from_me {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 10px;
+}
+.Chat_text .Chat_from_me .date,
+.status {
+  font-size: 10px;
+  font-weight: 300;
+  color: #b0b7bf;
+}
+.Chat_text .Chat_from_me .text {
+  background: #42acfa;
+  color: white;
+  font-size: 15px;
+  font-weight: 300;
+  padding: 3px 10px;
+  margin: 3px 0;
+  border-radius: 30px;
+  max-width: 200px;
+  word-wrap: break-word;
+}
+
+/* Chat_from_them */
+.Chat_text .Chat_from_them {
+  display: flex;
+  align-items: flex-start;
+
+  padding: 10px;
+}
+.Chat_text .Chat_from_them .img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.Chat_text .Chat_from_them .text {
+  background: #d3dce0;
+  color: #666;
+  padding: 3px 10px;
+  margin: 3px 0;
+  font-size: 15px;
+  font-weight: 300;
+  border-radius: 30px;
+  max-width: 200px;
+  word-wrap: break-word;
+}
